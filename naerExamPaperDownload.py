@@ -32,7 +32,7 @@ def download_pdf(pdf_url, file_name):
 
 def parse_filename(info):
     # 依據規則生成檔名
-    return f"{info['city']}_{info['school']}_{info['grade']}_{info['year']}_{info['subject']}_{info['type']}_{info['version']}_{info['id']}.pdf"
+    return f"{info['city']}_{info['school']}_{info['grade']}_{info['year']}_{info['subject']}_{info['type']}_{info['version']}"
 
 def scrape_page(page_url):
     response = requests.get(page_url)

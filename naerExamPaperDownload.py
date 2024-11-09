@@ -82,7 +82,7 @@ def scrape_page(page_url):
         if answer_link and not answer_link['href'].startswith("mailto:"):
             answer_file_url = urljoin(BASE_URL, answer_link['href'])
             answer_file_name = parse_filename(info, answer_file_url, "答案")
-            download_file(exam_file_url, answer_file_name)
+            download_file(answer_file_url, answer_file_name)
 
 def main():
     # 取得初始頁面，來獲取總頁數

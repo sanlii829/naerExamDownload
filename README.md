@@ -18,7 +18,8 @@
 
 1. **安裝依賴套件**：請確保已安裝 Python 並執行以下指令來安裝必要的套件：
     ```bash
-    pip install requests beautifulsoup4
+    pip install requests
+    pip install beautifulsoup
     ```
 
 2. **設定**：
